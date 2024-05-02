@@ -1,0 +1,82 @@
+/* General set up */
+
+* {margin: 0; padding: 0;}
+body {background-color: #ffffff; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+    "nav nav nav"
+	"img img img"
+	"main main main"
+	"footer footer footer";
+}
+
+h1 { font-family: 'Audiowide', cursive; margin: 0.4em; color: #64113F;}
+header h1 {color: #64113f; text-shadow: 2px 2px 2px #64113F;}
+h1 img {width: 300px; height: 300px; float: center;}
+
+
+/* Banner */
+ section.banner-image {grid-area: img; height: 20vh; background-position: center center center;
+    background: url(children\ clothes\ 1.jpeg);
+    max-height: 400px;
+	background-position: center center;}
+header a { color: #64113F; text-decoration: none; }
+
+
+
+
+ul {list-style-type: none;margin: 0; padding: 0; overflow: hidden; background-color: gray;}
+  
+li {float: right;}
+  
+li a {display: block;color: #64113f;text-align: center;padding: 14px 16px;text-decoration: none;}
+
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #F7CACD;}
+
+header nav {background-color: #bababa;}
+
+main h1, main a {color: #de4d86;}
+aside {background-color: #F7CACD; min-height: 20px; grid-area: aside; padding: 1vw; color: white;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+nav { display: grid;  grid-template-columns: 10% 80% 10%;}
+nav {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+nav {font-size: 2em; cursor: pointer; text-align: center;}
+nav{ margin-left: 10vw; text-align: left; display: none; position: absolute; padding: 20px;}
+nav {padding: 1vw;}
+nav{display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+
+h2 {margin-top: 0.5em;  margin-bottom: 0.5em;}
+form label, form input, form textarea {margin-top: 1em; margin-bottom: 1em ;box-sizing: border-box;  display: block; width: 46%; padding: 2%; float: left;}
+form textarea {height: 400px;}
+form input[type="submit"] {margin-left: 46%;}
+form {overflow: auto;}
+
+/* Navigation */
+.navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #ff523b; /* Changes the color of navigation links to orange when hovered over */
+}
+
+.cart-item {
+    margin-bottom: 1rem; /* Provides a margin below the cart item for separation */
+}
+
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .banner-image {
+        min-height: 300px; /* Adjusts the banner image's minimum height for smaller devices */
+    }
+} 
